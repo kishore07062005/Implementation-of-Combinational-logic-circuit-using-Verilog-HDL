@@ -1,5 +1,5 @@
-### Ex. No. : 2 
-### Date: 31.3.23 
+### Ex. No. : 6
+### Date: 08/01/2024 
 # Implementation of Combinational logic circuit using Verilog HDL
 ## Aim:
 To implement the following Boolean functions using Verilog HDL and to verify the truth table.
@@ -25,19 +25,40 @@ The result is that combinational logic circuits have no feedback, and any change
 5.	For different input combinations, generate the timing diagram.
 
 ## Simplification:
+![image](https://github.com/RahulM2005R/Implementation-of-Combinational-logic-circuit-using-Verilog-HDL/assets/166299886/56c66f4c-f544-4cf7-b670-0ad7f447face)
+![image](https://github.com/RahulM2005R/Implementation-of-Combinational-logic-circuit-using-Verilog-HDL/assets/166299886/90b6b7aa-8089-4c59-a99c-7503c4882118)
+
 
 ## Truth Table:
+![image](https://github.com/RahulM2005R/Implementation-of-Combinational-logic-circuit-using-Verilog-HDL/assets/166299886/d631d2c1-ae69-474d-b6fc-9e11f1b0d015)
 
 ## Program:
-
+```verilog
+module exp2a(a,b,c,d,f1,f2);
+input a,b,c,d;
+output f1,f2;
+wire adash,bdash,cdash,ddash,x,y,z,p,q,r;
+not(adash,a);
+not(bdash,b);
+not(cdash,c);
+not(ddash,d);
+and(x,bdash,ddash);
+and(y,adash,b,d);
+and(z,a,b,cdash);
+or(f1,x,y,z);
+and(p,cdash,d);
+and(q,a,c);
+and(r,b,c);
+or(f2,p,q,r);
+endmodule
+```
 
 ## RTL Schematic:
-
-
+![image](https://github.com/RahulMR2005/ex.2/assets/145525365/0f574b7b-dc36-4916-9a7d-09aa12fa9c49)
 
 
 ## Timing Diagram:
-
+![image](https://github.com/RahulMR2005/ex.2/assets/145525365/88caa0b3-55b7-4659-aafa-f5c961679723)
 
 
 
