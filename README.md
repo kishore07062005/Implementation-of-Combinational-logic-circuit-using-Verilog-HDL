@@ -1,4 +1,4 @@
-###NAME: KISHORE.M
+##NAME: KISHORE.M
 ##REG NO: 2305002012
 ### Date: 15/10/2024 
 # Implementation of Combinational logic circuit using Verilog HDL
