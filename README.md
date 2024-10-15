@@ -1,5 +1,4 @@
-### Ex. No. : 6
-### Date: 08/01/2024 
+### Date: 15/10/2024 
 # Implementation of Combinational logic circuit using Verilog HDL
 ## Aim:
 To implement the following Boolean functions using Verilog HDL and to verify the truth table.
